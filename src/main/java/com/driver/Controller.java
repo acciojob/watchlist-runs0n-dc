@@ -30,19 +30,19 @@ MovieService services;
 }
 @GetMapping("/getMovie/{name}")
     public ResponseEntity<Movie>getMovie(@PathVariable String name){
-      return new ResponseEntity<>(services.getMovie(name),HttpStatus.ACCEPTED);
+      return new ResponseEntity<>(services.getMovie(name),HttpStatus.CREATED);
 }
     @GetMapping("/getMovie/{name}")
     public ResponseEntity<Director>getDirector(@PathVariable String name){
-        return new ResponseEntity<>(services.getDirector(name), HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(services.getDirector(name), HttpStatus.CREATED);
     }
 @GetMapping("/get_movies_byDirector/{director}")
     public ResponseEntity<List<String>> getMoviesByDirectorName(@PathVariable String director){
-      return new ResponseEntity<>(services.getMoviesByDirector(director),HttpStatus.ACCEPTED);
+      return new ResponseEntity<>(services.getMoviesByDirector(director),HttpStatus.CREATED);
 }
 @GetMapping("/getAllMovies")
     public ResponseEntity<List<String>>getAllMovies(){
-    return new ResponseEntity<>(services.getAllMovies(),HttpStatus.ACCEPTED);
+    return new ResponseEntity<>(services.getAllMovies(),HttpStatus.CREATED);
 }
 @DeleteMapping("/delete_director_by_name")
     public ResponseEntity<String>deleteDirectorByName(@RequestParam String director){
