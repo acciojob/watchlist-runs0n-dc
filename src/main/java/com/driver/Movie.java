@@ -2,21 +2,21 @@ package com.driver;
 
 public class Movie {
     private String name;
-    private String genre;
-    private int ratings;
+    private int duration ;
+    private double rate;
 
-    public Movie(String name, String genre, int ratings) {
+    public Movie(String name, int duration, double rate) {
         this.name = name;
-        this.genre = genre;
-        this.ratings = ratings;
+        this.duration = duration;
+        this.rate = rate;
     }
 
-    public String getGenre() {
-        return genre;
+    public double getRate() {
+        return rate;
     }
 
-    public int getRatings() {
-        return ratings;
+    public int getDuration() {
+        return duration;
     }
 
     public String getName() {
@@ -27,11 +27,11 @@ public class Movie {
         this.name = name;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setGenre(int duration) {
+        this.duration = duration;
     }
 
-    public void setRatings(int ratings) {
-        this.ratings = ratings;
+    public void setRatings(double rate) {
+        this.rate = rate;
     }
 }

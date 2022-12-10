@@ -2,36 +2,36 @@ package com.driver;
 
 public class Director {
     private String nameD;
-    private String country;
-    private String Industry;
+    private int number;
+    private double ratings;
 
-    public Director(String nameD, String country, String industry) {
+    public Director(String nameD, int number,double ratings) {
         this.nameD = nameD;
-        this.country = country;
-        Industry = industry;
+        this.number = number;
+        this.ratings = ratings;
     }
 
     public String getNameD() {
         return nameD;
     }
 
-    public String getCountry() {
-        return country;
+    public int  getnumber() {
+        return number;
     }
 
-    public String getIndustry() {
-        return Industry;
+    public double getRatings() {
+        return ratings;
     }
 
     public void setNameD(String nameD) {
         this.nameD = nameD;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
-    public void setIndustry(String industry) {
-        Industry = industry;
+    public void setIndustry(double ratings) {
+        this.ratings = ratings;
     }
 }
